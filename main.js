@@ -10,7 +10,7 @@ app.use(BodyParser.json());
 app.use(BodyParser.urlencoded({ extended: true }));
 var database, collection;
 
-app.listen(5000, () => {
+app.listen(5134, () => {
 	MongoClient.connect(CONNECTION_URL, { useNewUrlParser: true }, (error, client) => {
 		if (error) {
 			throw error;
